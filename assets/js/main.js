@@ -258,8 +258,10 @@ $.getJSON("data/DOITT_MUSEUM_01_13SEPT2010.geojson", function (data) {
 });
 
 map = L.map("map", {
-  zoom: 10,
-  center: [40.702222, -73.979378],
+  zoom: 8,
+  center: [43.9504005, -74.283802 ],
+  minZoom: 6,
+  maxZoom: 17,
   layers: [mapquestOSM]
 });
 
@@ -302,7 +304,7 @@ $("#searchbox").click(function () {
 
 /* Typeahead search functionality */
 $(document).one("ajaxStop", function () {
-  map.fitBounds(boroughs.getBounds());
+  //map.fitBounds(boroughs.getBounds());
   $("#loading").hide();
 
   var boroughsBH = new Bloodhound({

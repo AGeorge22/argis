@@ -7,14 +7,14 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <title>BootLeaf</title>
+    <meta name="Steve Signell, Frontier Spatial, LLC" content="">
+    <title>Adirondack Regional Geographic Information System</title>
 
-    <link rel="stylesheet" href="assets/bootstrap-3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/font-awesome-4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/leaflet-0.7.2/leaflet.css">
-    <link rel="stylesheet" href="assets/leaflet-sidebar/L.Control.Sidebar.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.0.3/css/font-awesome.min.css">    <link rel="stylesheet" href="lib/leaflet-0.7.2/leaflet.css">
+    <link rel="stylesheet" href="lib/leaflet-sidebar/L.Control.Sidebar.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="lib/leaflet-control-osm-geocoder/Control.OSMGeocoder.css" rel="stylesheet" type="text/css"></link>
 
     <link rel="apple-touch-icon" href="assets/img/favicon-152.png">
     <link rel="shortcut icon" sizes="196x196" href="assets/img/favicon-196.png">
@@ -34,7 +34,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">BootLeaf</a>
+        <a class="navbar-brand" href="#">ARGIS</a>
       </div>
       <div class="navbar-collapse collapse">
         <form class="navbar-form navbar-right" role="search">
@@ -230,11 +230,16 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/bootstrap-3.1.1/js/bootstrap.min.js"></script>
-    <script src="assets/typeahead/typeahead.bundle.min.js"></script>
-    <script src="assets/leaflet-0.7.2/leaflet.js"></script>
-    <script src="assets/leaflet-sidebar/L.Control.Sidebar.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="lib/jquery-1.11.0.min.js"></script>
+    <script src="lib/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="lib/typeahead/typeahead.bundle.min.js"></script>
+    <script src="lib/leaflet-0.7.2/leaflet.js"></script>
+    <script src="lib/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>
+    <script src="lib/leaflet-sidebar/L.Control.Sidebar.js"></script>
+    <!-- LAYERS -->
+        <script type="text/javascript" src="assets/js/overlays.js"></script>
+        <script type="text/javascript" src="assets/js/icons.js"></script>
+        <script type="text/javascript" src="assets/js/blueline.js"></script>
+        <script type="text/javascript" src="assets/js/attractionsMap.js"></script>
   </body>
 </html>
